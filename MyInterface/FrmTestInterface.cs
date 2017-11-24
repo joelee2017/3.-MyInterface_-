@@ -45,5 +45,20 @@ namespace MyInterface
                 I.MakeNoise();
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Class x = new Class();
+            x.Test1();
+            x.Test2();
+            //.................
+            x.Dispose();
+
+
+            using (Class y = new Class())//Interface沒有定義IDisposable的話，Using無法使用
+            {
+
+            }//auto y.Dispose()
+        }
     }
 }

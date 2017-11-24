@@ -27,4 +27,33 @@ namespace MyInterface
             Debug.WriteLine("meow");
         }
     }
+
+    interface I1
+    {
+        void Test1();
+    }
+
+    interface I2
+    {
+        void Test2();
+    }
+
+    class Class : I1, I2, IDisposable
+    {
+        public void Dispose()
+        {
+            
+        }
+
+        public void Test1()
+        {
+            
+        }
+
+        public void Test2()
+        {
+            
+        }
+    }
+
 }

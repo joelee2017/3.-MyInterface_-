@@ -15,7 +15,7 @@ namespace MyInterface
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmTestInterface());
+            Application.Run(new FrmMyEmploee());
         }
     }
 }
