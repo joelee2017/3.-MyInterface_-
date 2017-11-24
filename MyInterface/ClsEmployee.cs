@@ -13,7 +13,7 @@ namespace MyInterface
         Tester
     }
 
-    class ClsEmployee
+    class ClsEmployee:IComparable<ClsEmployee>//IComparable<>通用定義比較方法<>用到它的類別，沒放的話下面會變成OBJECT
     {
         public string EmpName { get; set; }
         public DateTime HireDate { get; set; }
@@ -32,12 +32,12 @@ namespace MyInterface
         {
             // this VS. other
 
-            if (this.Salary < other.Salary)
+            if (this.Salary < other.Salary) // a < B 往下排
                 return -1;
-            else if (this.Salary > other.Salary)
+            else if (this.Salary > other.Salary) // a > B 往上排
                 return 1;
             else
-                return 0;
+                return 0; // a = b  同排
         }
     }
 

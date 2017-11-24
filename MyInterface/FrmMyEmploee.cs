@@ -26,7 +26,7 @@ namespace MyInterface
             empList.Add(new ClsEmployee { EmpName = "aaa", HireDate = DateTime.Now.AddDays(-7), JobTitle = JobTitle.Engineer, Salary = 70000 });
             empList.Add(new ClsEmployee { EmpName = "abb", HireDate = DateTime.Now.AddDays(-3), JobTitle = JobTitle.Engineer, Salary = 50000 });
             empList.Add(new ClsEmployee { EmpName = "acc", HireDate = DateTime.Now.AddDays(-1), JobTitle = JobTitle.Engineer, Salary = 50000 });
-
+            empList.Sort();
             
             this.dataGridView1.DataSource = empList;
 
